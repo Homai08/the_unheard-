@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Unheard | Interactive Newspaper</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<main class="newspaper">
+
+    <!-- NEWSPAPER HEADER -->
+
+    <header class="masthead">
+
+        <div class="top-line">
+            <span>VOL. I — ISSUE 01</span>
+            <span>SPECIAL EDITION</span>
+            <span>EST. 2026</span>
+        </div>
+
+        <h1>THE UNHEARD</h1>
+
+        <p class="tagline">
+            An Independent Journal of Voices & Questions
+        </p>
+
+        <div class="edition-line">
+            <span>SOCIETY & REFLECTION</span>
+            <span>PRICE: A MOMENT OF REFLECTION</span>
+        </div>
+
+    </header>
+
+
+    <!-- STORY CONTENT -->
+
+    <section class="lead-story">
+
+        <p class="section-label" id="story-category">
+            THE LEAD STORY
+        </p>
+
+        <h2 id="story-title">
+            Silence in the Name of Faith
+        </h2>
+
+        <p class="subtitle" id="story-subtitle">
+            When the same words become freedom for one
+            and obedience for another.
+        </p>
+
+        <div class="double-rule"></div>
+
+
+        <!-- PUZZLE -->
+
+        <section id="puzzle-section">
+
+            <h3>A Picture Worth a Thousand Words</h3>
+
+            <p class="instructions">
+                Nine fragments. One picture.
+                Select two pieces to swap their positions.
+                Reconstruct the illustration to uncover the story.
+            </p>
+
+            <div id="puzzle-board"
+                 role="group"
+                 aria-label="Nine-piece picture puzzle">
+            </div>
+
+            <p id="moves" aria-live="polite">Moves: 0</p>
+
+            <button id="restart-btn" type="button">
+                RESTART PUZZLE
+            </button>
+            <button id="skip-btn" type="button">
+    SKIP PUZZLE — READ STORY
+</button>
+<div class="story-navigation">
+
+    <button id="puzzle-previous-btn" type="button">
+        ← PREVIOUS STORY
+    </button>
+
+    <button id="puzzle-next-btn" type="button">
+        NEXT STORY →
+    </button>
+
+</div>
+
+            <p class="puzzle-quote">
+                "Some truths must be pieced together
+                before they can be understood."
+            </p>
+
+        </section>
+
+
+        <!-- COMPLETION MESSAGE -->
+
+        <section id="completion-message" class="hidden">
+
+            <div class="completion-box">
+
+                <p class="section-label">EXTRA! EXTRA!</p>
+
+                <h3>PUZZLE COMPLETED!</h3>
+
+                <p>
+                    You've uncovered the picture.
+                    But have you uncovered its meaning?
+                </p>
+
+                <button id="okay-btn" type="button">
+                    OK — READ THE STORY
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ARTICLE -->
+
+        <article id="article-section" class="hidden">
+
+            <p class="section-label">
+                OPINION & REFLECTION
+            </p>
+
+            <h3 id="article-title"></h3>
+
+            <div class="article-content" id="article-content">
+            </div>
+
+            <button id="play-again-btn" type="button">
+                RETURN TO THE PUZZLE
+            </button>
+
+            <div class="story-navigation">
+
+                <button id="previous-btn"
+                        type="button"
+                        class="hidden">
+                    ← PREVIOUS STORY
+                </button>
+
+                <button id="next-btn" type="button">
+                    NEXT STORY →
+                </button>
+
+            </div>
+
+        </article>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-rule"></div>
+
+        <p>
+            THE UNHEARD — EVERY VOICE DESERVES TO BE HEARD
+        </p>
+
+        <p id="page-number">PAGE 1 OF 2</p>
+
+    </footer>
+
+</main>
+
+</body>
+</html>
