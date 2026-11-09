@@ -122,7 +122,7 @@ const stories = [
 
     subtitle: "When protection becomes restriction.",
 
-    image: "images/barbedWire.jpeg",
+    image: "images/barbedwire.jpeg",
 
     article: `
         <p>Safety.</p>
